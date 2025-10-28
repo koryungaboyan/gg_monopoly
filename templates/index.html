@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Մոնոպոլիա — Հարցուպատասխան</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="name">Մոնոպոլիա — Հարցուպատասխան (հայերեն)</h1>
+
+      <div class="board-wrapper">
+        <img id="board-image" src="/static/main.jpg" alt="Board" />
+        <!-- Պետքունակ քառակուսիները (ապահովեք ճիշտ դիրքեր՝ CSS-ում) -->
+        <div id="squares-container"></div>
+        <!-- Tokens -->
+        <div id="tokens">
+          <div class="token" id="token-0">A</div>
+          <div class="token" id="token-1">B</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div>Տեղակալներ: <span id="player-turn">Խաղացող 1</span></div>
+        <br>
+        <button id="roll-btn">Թափել գրտուկը 🎲</button><br>
+        <br>
+        <div>Գնդակը՝ <span id="dice-result">—</span></div>
+        <div id="log"></div>
+      </div>
+    </div>
+
+    <!-- Modal for question -->
+    <div id="question-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3 id="q-text"></h3>
+        <div id="q-options"></div>
+        <button id="close-q">Փակել</button>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
