@@ -79,4 +79,4 @@ def reset_game():
     return jsonify({"ok": True, "message": "Խաղը սկսվեց նորից 🚀", "players": players})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
