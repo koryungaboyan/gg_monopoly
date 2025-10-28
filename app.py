@@ -59,7 +59,7 @@ def check_answer(player_id):
         message = f"{player_id} ճիշտ պատասխանեց ✅ և առաջ անցավ {players[player_id]} դիրքին։"
         correct = True
     else:
-        players[player_id] = 0  # սխալ դեպքում՝ GO
+        players[player_id] = 0
         message = f"{player_id} սխալ պատասխանեց ❌ և վերադարձավ GO վանդակ։"
         correct = False
 
